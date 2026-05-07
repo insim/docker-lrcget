@@ -56,8 +56,8 @@ services:
       # - /etc/localtime:/etc/localtime:ro
     
     # Optional: devices for audio (Linux only - comment out on Windows/Mac)
-    # devices:
-    #   - /dev/snd:/dev/snd  # Audio device passthrough
+    devices:
+      - /dev/snd:/dev/snd  # Audio device passthrough
     
     # Optional: Add capabilities for better audio support
     # cap_add:
