@@ -21,7 +21,7 @@ services:
       
       # Display settings
       - DISPLAY_WIDTH=1280
-      - DISPLAY_HEIGHT=1080
+      - DISPLAY_HEIGHT=800
       
       # Keep application running
       - KEEP_APP_RUNNING=1
