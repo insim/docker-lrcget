@@ -16,8 +16,8 @@ services:
     # Environment variables
     environment:
       # User/Group IDs - adjust to match your host user
-      - USER_ID=1000
-      - GROUP_ID=1000
+      - USER_ID=${USER_ID}
+      - GROUP_ID=${GROUP_ID}
       
       # Display settings
       - DISPLAY_WIDTH=1280
@@ -50,7 +50,7 @@ services:
       - ./docker/config:/config:rw
       
       # Music library - mount your music folder here
-      - /path/to/your/music:/music:rw
+      - ${MUSIC_PATH}:/music:rw
       
       # Optional: Timezone
       # - /etc/localtime:/etc/localtime:ro
